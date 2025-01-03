@@ -21,3 +21,8 @@ OPENAI_API_KEY = load_openai_api_key()
 # 모델에 데이터를 입력하고 결과 출력
 response = generate_response(result_load, OPENAI_API_KEY)
 print(response)
+
+SCORE_FILE = "./pdf_lecture/module/score.md"
+# response를 score.md 파일로 저장
+with open(SCORE_FILE, "w", encoding="utf-8") as f:
+    f.write(response)
