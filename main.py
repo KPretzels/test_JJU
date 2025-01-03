@@ -1,1 +1,2 @@
-print('befor commit')
+print('before commit')
+print('commit')
